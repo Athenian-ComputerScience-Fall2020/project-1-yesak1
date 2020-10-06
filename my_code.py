@@ -1,6 +1,7 @@
 # Collaborators (including web sites where you got help: (enter none if you didn't need help)
 #  https://www.baseball-reference.com/bullpen/Baseball_statistics for all the stats
 # Megan helped and gave feedback
+# football stats https://simulatedfootball.com/tools/points-calculator.html
 
 def average():
         avg_hits=int(input("enter the amount of hits you had "))
@@ -54,47 +55,69 @@ def ops():
         print(x)
     print (f"your OPS percentage is {final_ops}")
 
+def passperc():
+    pass_attempts=int(input("how many passes did you throw? "))
+    pass_comp=int(input("how many passes did you complete? "))
+    finalpassperc=float(pass_comp / pass_attempts)
+    passperc_list=[f"{pass_comp} / {pass_attempts} = {finalpassperc}"]
+    for x in passperc_list:
+        print(x)
+    print (f"your pass completion percentage is {finalpassperc}")
+
+def yards_compl():
+    completions=int(input("How many passes did you complete? "))
+    yards_comp=int("How many total yards passing do you have? ")
+    #WORK ON THIS
+
 
 
 
 def code():
-    asker = int(input("this is a sports calculator. Enter 1 for baseball, 2 for basketball, and 3 for football "))
+    asker = int(input("this is a sports calculator. Enter 1 for baseball, 2 for football, and 3 for basketball "))
     if asker==1:
         baseball_choice=int(input("Ok. you chose baseball. Press 1 to calculate batting average, press 2 to find on base percentage, press 3 to calculate slugging percentage, or press 4 to find on-base percentage plus slugging average "))
-    if baseball_choice==1:
-        average()
-        runagain=(input("want to calculate again? press y for yes or n for no "))
-        if runagain=="y":
-            code()
-        if runagain=="n":
-            print("thanks for using!")
-    if baseball_choice==2:
-        onbaseperc()
-        runagain=(str(input("want to calculate again? press y for yes or n for no ")))
-        if runagain=="y":
-            code()
-        if runagain=="n":
-            print("thanks for using!")
-    if baseball_choice==3:
-        slugging()
-        runagain=(str(input("want to calculate again? press y for yes or n for no ")))
-        if runagain=="y":
-            code()
-        if runagain=="n":
-            print("thanks for using!")
-    if baseball_choice==4:
-        ops()
-        runagain=(str(input("want to calculate again? press y for yes or n for no ")))
-        if runagain=="y":
-            code()
-        if runagain=="n":
-            print("thanks for using!")
-    
+        if baseball_choice==1:
+            average()
+            runagain=(input("want to calculate again? press y for yes or n for no "))
+            if runagain=="y":
+                code()
+            if runagain=="n":
+                print("thanks for using!")
+        if baseball_choice==2:
+            onbaseperc()
+            runagain=(str(input("want to calculate again? press y for yes or n for no ")))
+            if runagain=="y":
+                code()
+            if runagain=="n":
+                print("thanks for using!")
+        if baseball_choice==3:
+            slugging()
+            runagain=(str(input("want to calculate again? press y for yes or n for no ")))
+            if runagain=="y":
+                code()
+            if runagain=="n":
+                print("thanks for using!")
+        if baseball_choice==4:
+            ops()
+            runagain=(str(input("want to calculate again? press y for yes or n for no ")))
+            if runagain=="y":
+                code()
+            if runagain=="n":
+                print("thanks for using!")
+    if asker==2:
+        football_choice=int(input("Ok. you chose football. Enter 1 for completion percentage, enter 2 for yards per completion, enter 3 for yards per pass attempt, enter 4 for yards per rush, or enter 5 for field goal percentage "))
+        if football_choice==1:
+            passperc()
+            runagain=(str(input("want to calculate again? press y for yes or n for no ")))
+            if runagain=="y":
+                code()
+            if runagain=="n":
+                print("thanks for using!")
+        if football_choice==2:
+            #WORK ON THIS
+
+
 
         
 
 code()
-        
-
-    
-    
