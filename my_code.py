@@ -66,9 +66,89 @@ def passperc():
 
 def yards_compl():
     completions=int(input("How many passes did you complete? "))
-    yards_comp=int("How many total yards passing do you have? ")
-    #WORK ON THIS
+    yards=int(input("How many total yards passing do you have? "))
+    finalyardcomp=float(yards / completions)
+    completionlist={f"{yards} / {completions} = {finalyardcomp}"}
+    for x in completionlist:
+        print(x)
+    print (f"you average {finalyardcomp} yards per completion")
 
+def yardsperattempt():
+    attempts=int(input("How many times did you attempt to throw the ball? "))
+    yards2=int(input("How many total yards passing do you have? "))
+    finalyrdatt=float(yards2 / attempts)
+    list_attemptyard={f"{yards2} / {attempts} = {finalyrdatt}"}
+    for x in list_attemptyard:
+        print(x)
+    print (f"you average {finalyrdatt} yards per attempt")
+
+def yardsrush():
+    rushattempts=int(input("How many times did you attempt to run the ball? "))
+    yards3=int(input("How many total yards passing do you have? "))
+    finalrun=float(yards3 / rushattempts)
+    list_attemptyard={f"{yards3} / {rushattempts} = {finalrun}"}
+    for x in list_attemptyard:
+        print(x)
+    print (f"you average {finalrun} yards per run")
+
+def fieldgoal():
+    fg_attempt=int(input("How many times did you attempt a field goal? "))
+    fg_made=int(input("How many times did you make a field goal? "))
+    final_fg_perc=float(fg_made / fg_attempt)
+    total_fgpoints=float(fg_made*3)
+    list_fg={f"{fg_made} / {fg_attempt} = {final_fg_perc}"}
+    for x in list_fg:
+        print(x)
+    print (f"your field goal percentage is {final_fg_perc} and in total, you got {total_fgpoints} points")
+
+def tripledouble():
+    td_points=int(input("How many points did you score? "))
+    td_rebs=int(input("How many rebounds did you get? "))
+    td_assists=int(input("How many assists did you get? "))
+    td_steals=int(input("How many steals did you get? "))
+    td_blocks=int(input("How many times did you block a shot? "))
+    if td_points>=10 and td_rebs>=10 and td_assists>=10:
+        print ("You got a triple double!")
+    if td_points>=10 and td_steals>=10 and td_blocks>=10:
+        print ("You got a triple double!")
+    if td_rebs>=10 and td_assists>=10 and td_steals>=10:
+        print ("You got a triple double!")
+    if td_rebs>=10 and td_blocks>=10 and td_points>=10:
+        print ("You got a triple double!")
+    if td_assists>=10 and td_steals>=10 and td_blocks>=10:
+        print ("You got a triple double!")
+    if td_assists>=10 and td_points>=10 and td_blocks>=10:
+        print ("You got a triple double!")
+    if td_steals>=10 and td_blocks>=10 and td_points>=10:
+        print ("You got a triple double!")
+    if td_steals>=10 and td_assists>=10 and td_points>=10:
+        print ("You got a triple double!")
+    if td_steals>=10 and td_assists>=10 and td_rebs>=10:
+        print ("You got a triple double!")
+    if td_blocks>=10 and td_points>=10 and td_rebs>=10:
+        print ("You got a triple double!")
+    if td_blocks>=10 and td_assists>=10 and td_steals>=10:
+        print ("You got a triple double!")
+    if td_blocks>=10 and td_assists>=10 and td_steals>=10 and td_points>=10 and td_rebs=>10:
+        print ("You got a triple double!")
+    if td_blocks>=10 and td_assists>=10 and td_steals>=10 and td_points>=10:
+        print ("You got a triple double!")
+    if td_blocks>=10 and td_assists>=10 and td_steals>=10 and td_rebs=>10:
+        print ("You got a triple double!")
+    if td_blocks>=10 and td_assists>=10 and td_points>=10 and td_rebs=>10:
+        print ("You got a triple double!")
+    if td_blocks>=10 and td_steals>=10 and td_points>=10 and td_rebs=>10:
+        print ("You got a triple double!")
+    if td_assists>=10 and td_steals>=10 and td_points>=10 and td_rebs=>10:
+        print ("You got a triple double!")
+    '''else:
+        print("You did not get a triple double")'''
+        
+        
+        
+
+        
+        
 
 
 
@@ -83,6 +163,9 @@ def code():
                 code()
             if runagain=="n":
                 print("thanks for using!")
+            else:
+                print("invalid input")
+
         if baseball_choice==2:
             onbaseperc()
             runagain=(str(input("want to calculate again? press y for yes or n for no ")))
@@ -90,6 +173,9 @@ def code():
                 code()
             if runagain=="n":
                 print("thanks for using!")
+            else:
+                print("invalid input")
+
         if baseball_choice==3:
             slugging()
             runagain=(str(input("want to calculate again? press y for yes or n for no ")))
@@ -97,6 +183,9 @@ def code():
                 code()
             if runagain=="n":
                 print("thanks for using!")
+            else:
+                print("invalid input")
+
         if baseball_choice==4:
             ops()
             runagain=(str(input("want to calculate again? press y for yes or n for no ")))
@@ -104,6 +193,8 @@ def code():
                 code()
             if runagain=="n":
                 print("thanks for using!")
+            else:
+                print("invalid input")
     if asker==2:
         football_choice=int(input("Ok. you chose football. Enter 1 for completion percentage, enter 2 for yards per completion, enter 3 for yards per pass attempt, enter 4 for yards per rush, or enter 5 for field goal percentage "))
         if football_choice==1:
@@ -113,11 +204,60 @@ def code():
                 code()
             if runagain=="n":
                 print("thanks for using!")
+            else:
+                print("invalid input")
         if football_choice==2:
-            #WORK ON THIS
+            yards_compl()
+            runagain=(str(input("want to calculate again? press y for yes or n for no ")))
+            if runagain=="y":
+                code()
+            if runagain=="n":
+                print("thanks for using!")
+            else:
+                print("invalid input")
+        if football_choice==3:
+            yardsperattempt()
+            runagain=(str(input("want to calculate again? press y for yes or n for no ")))
+            if runagain=="y":
+                code()
+            if runagain=="n":
+                print("thanks for using!")
+            else:
+                print("invalid input")
+        if football_choice==4:
+            yardsrush()
+            runagain=(str(input("want to calculate again? press y for yes or n for no ")))
+            if runagain=="y":
+                code()
+            if runagain=="n":
+                print("thanks for using!")
+            else:
+                print("invalid input")
+        if football_choice==5:
+            fieldgoal()
+            runagain=(str(input("want to calculate again? press y for yes or n for no ")))
+            if runagain=="y":
+                code()
+            if runagain=="n":
+                print("thanks for using!")
+            else:
+                print("invalid input")
+    if asker==3:
+        basketball_choice=int(input("Ok. You chose basketball. Press 1 to see if you got a triple double, press 2 too calculate your shooting percentage, or press 3 to compare your jersey number to the best who ever wore it "))
+        if basketball_choice==1:
+            tripledouble()
+            runagain=(str(input("want to calculate again? press y for yes or n for no ")))
+            if runagain=="y":
+                code()
+            if runagain=="n":
+                print("thanks for using!")
+            else:
+                print("invalid input")
 
 
 
-        
+            
+
+
 
 code()
