@@ -129,20 +129,54 @@ def tripledouble():
         print ("You got a triple double!")
     if td_blocks>=10 and td_assists>=10 and td_steals>=10:
         print ("You got a triple double!")
-    if td_blocks>=10 and td_assists>=10 and td_steals>=10 and td_points>=10 and td_rebs=>10:
+    if td_blocks>=10 and td_assists>=10 and td_steals>=10 and td_points>=10 and td_rebs>=10:
         print ("You got a triple double!")
     if td_blocks>=10 and td_assists>=10 and td_steals>=10 and td_points>=10:
         print ("You got a triple double!")
-    if td_blocks>=10 and td_assists>=10 and td_steals>=10 and td_rebs=>10:
+    if td_blocks>=10 and td_assists>=10 and td_steals>=10 and td_rebs>=10:
         print ("You got a triple double!")
-    if td_blocks>=10 and td_assists>=10 and td_points>=10 and td_rebs=>10:
+    if td_blocks>=10 and td_assists>=10 and td_points>=10 and td_rebs>=10:
         print ("You got a triple double!")
-    if td_blocks>=10 and td_steals>=10 and td_points>=10 and td_rebs=>10:
+    if td_blocks>=10 and td_steals>=10 and td_points>=10 and td_rebs>=10:
         print ("You got a triple double!")
-    if td_assists>=10 and td_steals>=10 and td_points>=10 and td_rebs=>10:
+    if td_assists>=10 and td_steals>=10 and td_points>=10 and td_rebs>=0:
         print ("You got a triple double!")
-    '''else:
-        print("You did not get a triple double")'''
+    
+    if td_points<=10 and td_rebs<=10 and td_assists<=10:
+        print ("You did not get a triple double")
+    if td_points<=10 and td_steals<=10 and td_blocks<=10:
+        print ("You did not get a triple double")
+    if td_rebs<=10 and td_assists<=10 and td_steals<=10:
+        print ("You did not get a triple double")
+    if td_rebs<=10 and td_blocks<=10 and td_points<=10:
+        print ("You did not get a triple double")
+    if td_assists<=10 and td_steals<=10 and td_blocks<=0:
+        print ("You did not get a triple double")
+    if td_assists<=10 and td_points<=10 and td_blocks<=10:
+        print ("You did not get a triple double")
+    if td_steals<=10 and td_blocks<=10 and td_points<=10:
+        print ("You did not get a triple double")
+    if td_steals<=10 and td_assists<=10 and td_points<=10:
+        print ("You did not get a triple double")
+    if td_steals<=10 and td_assists<=10 and td_rebs<=10:
+        print ("You did not get a triple double")
+    if td_blocks<=10 and td_points<=10 and td_rebs<=10:
+        print ("You did not get a triple double")
+    if td_blocks<=10 and td_assists<=10 and td_steals<=10:
+        print ("You did not get a triple double")
+    if td_blocks<=10 and td_assists<=10 and td_steals<=10 and td_points<=10 and td_rebs<=10:
+        print ("You did not get a triple double")
+    if td_blocks<=10 and td_assists<=10 and td_steals<=10 and td_points<=10:
+        print ("You did not get a triple double")
+    if td_blocks<=10 and td_assists<=10 and td_steals<=10 and td_rebs<=10:
+        print ("You did not get a triple double")
+    if td_blocks<=10 and td_assists<=10 and td_points<=10 and td_rebs<=10:
+        print ("You did not get a triple double")
+    if td_blocks<=10 and td_steals<=10 and td_points<=10 and td_rebs<=10:
+        print ("You did not get a triple double")
+    if td_assists<=10 and td_steals<=10 and td_points<=10 and td_rebs<=0:
+        print ("You did not get a triple double")
+    
         
         
         
