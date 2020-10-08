@@ -178,10 +178,10 @@ def shotperc():
         break
 
 def jerseynumber():
-    inputjersey=int(input("What jersey number do you wear? (0-99) "))
+    inputjersey=int(input("Enter a jersey number (0-99) "))
     if inputjersey==0:
         list_0=["Russell Westbrook", "Gilbert Arenas"]
-        asklegendint0=int(input("Would you like to know a current player, or a retired legend? Press 1 for current player or 2 for retired legend"))
+        asklegendint0=int(input("Would you like to know a current player, or a retired legend? Press 1 for current player or 2 for retired legend "))
         if asklegendint0==1:
             print(list_0[0])
         elif asklegendint0==2:
@@ -189,7 +189,7 @@ def jerseynumber():
     
     elif inputjersey==1:
         list_1=["Zion Williamson", "Tracy McGrady"]
-        asklegendint1=int(input("Would you like to know a current player, or a retired legend? Press 1 for current player or 2 for retired legend"))
+        asklegendint1=int(input("Would you like to know a current player, or a retired legend? Press 1 for current player or 2 for retired legend "))
         if asklegendint1==1:
             print(list_1[0])
         elif asklegendint1==2:
@@ -197,7 +197,7 @@ def jerseynumber():
     
     elif inputjersey==2:
         list_2=["Kawhi Leonard", "Moses Malone"]
-        asklegendint2=int(input("Would you like to know a current player, or a retired legend? Press 1 for current player or 2 for retired legend"))
+        asklegendint2=int(input("Would you like to know a current player, or a retired legend? Press 1 for current player or 2 for retired legend "))
         if asklegendint2==1:
             print(list_2[0])
         elif asklegendint2==2:
@@ -205,7 +205,7 @@ def jerseynumber():
     
     elif inputjersey==3:
         list_3=["Chris Paul", "Dwyane Wade"]
-        asklegendint3=int(input("Would you like to know a current player, or a retired legend? Press 1 for current player or 2 for retired legend"))
+        asklegendint3=int(input("Would you like to know a current player, or a retired legend? Press 1 for current player or 2 for retired legend "))
         if asklegendint3==1:
             print(list_3[0])
         elif asklegendint3==2:
@@ -213,7 +213,7 @@ def jerseynumber():
     
     elif inputjersey==4:
         list_4=["Victor Oladipo", "Dolph Schayes"]
-        asklegendint4=int(input("Would you like to know a current player, or a retired legend? Press 1 for current player or 2 for retired legend"))
+        asklegendint4=int(input("Would you like to know a current player, or a retired legend? Press 1 for current player or 2 for retired legend "))
         if asklegendint4==1:
             print(list_4[0])
         elif asklegendint4==2:
@@ -221,7 +221,7 @@ def jerseynumber():
 
     elif inputjersey==5:
         list_5=["De'Aaron Fox", "Jason Kidd"]
-        asklegendint5=int(input("Would you like to know a current player, or a retired legend? Press 1 for current player or 2 for retired legend"))
+        asklegendint5=int(input("Would you like to know a current player, or a retired legend? Press 1 for current player or 2 for retired legend "))
         if asklegendint5==1:
             print(list_5[0])
         elif asklegendint5==2:
@@ -229,7 +229,7 @@ def jerseynumber():
 
     elif inputjersey==6:
         list_6=["Kristaps Porzingis", "Bill Russell"]
-        asklegendint6=int(input("Would you like to know a current player, or a retired legend? Press 1 for current player or 2 for retired legend"))
+        asklegendint6=int(input("Would you like to know a current player, or a retired legend? Press 1 for current player or 2 for retired legend "))
         if asklegendint6==1:
             print(list_6[0])
         elif asklegendint6==2:
@@ -237,19 +237,77 @@ def jerseynumber():
     
     elif inputjersey==7:
         list_7=["Kyle Lowry", "Pete Maravich"]
-        asklegendint7=int(input("Would you like to know a current player, or a retired legend? Press 1 for current player or 2 for retired legend"))
+        asklegendint7=int(input("Would you like to know a current player, or a retired legend? Press 1 for current player or 2 for retired legend "))
         if asklegendint7==1:
             print(list_7[0])
         elif asklegendint7==2:
             print(list_7[1])
 
-    '''elif inputjersey==8:
-        list_8=["Kyle Lowry", "Pete Maravich"]
-        asklegendint7=int(input("Would you like to know a current player, or a retired legend? Press 1 for current player or 2 for retired legend"))
-        if asklegendint7==1:
-            print(list_7[0])
-        elif asklegendint7==2:
-            print(list_7[1])'''
+    elif inputjersey==8:
+        list_8=["Kemba Walker", "Kobe Bryant"]
+        asklegendint8=int(input("Would you like to know a current player, or a retired legend? Press 1 for current player or 2 for retired legend "))
+        if asklegendint8==1:
+            print(list_8[0])
+        elif asklegendint8==2:
+            print(list_8[1])
+
+    elif inputjersey==9:
+        list_9=["Nikola Vucevic", "Bob Petitt"]
+        asklegendint9=int(input("Would you like to know a current player, or a retired legend? Press 1 for current player or 2 for retired legend "))
+        if asklegendint9==1:
+            print(list_9[0])
+        elif asklegendint9==2:
+            print(list_9[1])
+
+    elif inputjersey==10:
+        list_10=["DeMar Derozan", "Walt Frazier"]
+        asklegendint10=int(input("Would you like to know a current player, or a retired legend? Press 1 for current player or 2 for retired legend "))
+        if asklegendint10==1:
+            print(list_10[0])
+        elif asklegendint10==2:
+            print(list_10[1])
+
+    elif inputjersey==11:
+        list_11=["Klay Thompson", "Yao Ming"]
+        asklegendint11=int(input("Would you like to know a current player, or a retired legend? Press 1 for current player or 2 for retired legend "))
+        if asklegendint11==1:
+            print(list_11[0])
+        elif asklegendint11==2:
+            print(list_11[1])
+
+    elif inputjersey==12:
+        list_12=["Ja Morant", "John Stockton"]
+        asklegendint12=int(input("Would you like to know a current player, or a retired legend? Press 1 for current player or 2 for retired legend "))
+        if asklegendint12==1:
+            print(list_12[0])
+        elif asklegendint12==2:
+            print(list_12[1])
+
+    elif inputjersey==13:
+        list_13=["James Harden", "Wilt Chamberlain"]
+        asklegendint13=int(input("Would you like to know a current player, or a retired legend? Press 1 for current player or 2 for retired legend "))
+        if asklegendint13==1:
+            print(list_13[0])
+        elif asklegendint13==2:
+            print(list_13[1])
+
+    elif inputjersey==14:
+        list_14=["Tyler Herro", "Oscar Robertson"]
+        asklegendint14=int(input("Would you like to know a current player, or a retired legend? Press 1 for current player or 2 for retired legend "))
+        if asklegendint14==1:
+            print(list_14[0])
+        elif asklegendint14==2:
+            print(list_14[1])
+
+    elif inputjersey==15:
+        list_15=["Nikola Jokic", "Vince Carter"]
+        asklegendint15=int(input("Would you like to know a current player, or a retired legend? Press 1 for current player or 2 for retired legend "))
+        if asklegendint15==1:
+            print(list_15[0])
+        elif asklegendint15==2:
+            print(list_15[1])
+
+    
 
 
 
@@ -358,7 +416,7 @@ def code():
             except:
                 print("invalid input")
     elif asker==3:
-        basketball_choice=int(input("Ok. You chose basketball. Press 1 to see if you got a triple double, press 2 too calculate your shooting percentage, or press 3 to compare your jersey number to the best who ever wore it "))
+        basketball_choice=int(input("Ok. You chose basketball. Press 1 to see if you got a triple double, press 2 too calculate your shooting percentage, or press 3 to find the best players ever for every jersey number "))
         if basketball_choice==1:
             tripledouble()
             runagain=(str(input("want to calculate again? press y for yes or n for no ")))
