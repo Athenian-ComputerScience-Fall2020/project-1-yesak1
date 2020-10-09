@@ -13,7 +13,7 @@ def average(): #function
         for x in avg_list:
             print(x)
         print(f"your batting average is {finalavg}")
-        while finalavg<=0.5:
+        while finalavg>=0.5:
             print("That's a very high batting average! good job")
             break
 
