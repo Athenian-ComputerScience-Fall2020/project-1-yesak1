@@ -7,8 +7,8 @@ Start by mapping your idea out in pseudocode, then writing the program. You will
 
 ### Criteria
 Your program should include a minimum of: 
-* 1 list (3 or more elements) 
-* manipulation of the list in some way 
+* 1 list (3 or more elements) **
+* manipulation of the list in some way **
 * 1 while loop **
 * 1 conditional (if-elif-else) **
 * 1 for loop **
