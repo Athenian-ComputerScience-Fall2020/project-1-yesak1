@@ -5,9 +5,9 @@
 # jersey numbers: https://bleacherreport.com/articles/2883209-the-best-nba-players-by-jersey-number  
 # jersey numbers https://www.basketball-reference.com/leagues/NBA_2020_numbers.html
 
-def average():
+def average(): #function
         avg_hits=int(input("enter the amount of hits you had "))
-        avg_atbats=int(input("enter the amount of plate appearances you had "))
+        avg_atbats=int(input("enter the amount of plate appearances you had ")) #multiple types of variables
         finalavg=float(avg_hits/avg_atbats)
         avg_list = [f"{avg_hits} / {avg_atbats}"]
         for x in avg_list:
@@ -69,7 +69,7 @@ def passperc():
     for x in passperc_list:
         print(x)
     print (f"your pass completion percentage is {finalpassperc}")
-    while pass_comp<=10:
+    while pass_comp<=10: #while loop
         print("That's alot of completions! good job")
         break
 
@@ -132,7 +132,7 @@ def tripledouble():
         print ("You got a triple double!")
     elif td_points>=10 and td_steals>=10 and td_blocks>=10:
         print ("You got a triple double!")
-    elif td_rebs>=10 and td_assists>=10 and td_steals>=10:
+    elif td_rebs>=10 and td_assists>=10 and td_steals>=10: #conditional
         print ("You got a triple double!")
     elif td_rebs>=10 and td_blocks>=10 and td_points>=10:
         print ("You got a triple double!")
@@ -170,7 +170,7 @@ def shotperc():
     shotmake=int(input("How many shots did you make? "))
     finalperc=(shotmake/shotattempt)
     shotstring=[f"{shotmake} / {shotattempt} = {finalperc}"]
-    for x in shotstring:
+    for x in shotstring: #for loop
         print(x)
     print(f"your shot percentage is {finalperc}")
     while shotmake<=10:
@@ -953,7 +953,7 @@ def jerseynumber():
             print(list_84[2])
 
     elif inputjersey==85:
-        list_85=["No Current Players Wear #85", "Baron Davis", "Invalid input"]
+        list_85=["No Current Players Wear #85", "Baron Davis", "Invalid input"] 
         asklegendint85=int(input("Would you like to know a current player, or a retired legend? Press 1 for current player or 2 for retired legend "))
         if asklegendint85==1:
             print(list_85[0])
@@ -1094,35 +1094,6 @@ def jerseynumber():
 
 
 
-    
-
-
-    
-        
-    
-
-    
-
-
-
-
-    
-
-
-
-
-
-    
-
-    
-
-
-
-
-
-    
-
-
 def code():
     asker = int(input("this is a sports calculator. Enter 1 for baseball, 2 for football, and 3 for basketball "))
     if asker==1:
@@ -1130,7 +1101,7 @@ def code():
         if baseball_choice==1:
             average()
             runagain=(input("want to calculate again? press y for yes or n for no "))
-            try:    
+            try:  #try/except  
                 if runagain=="y":
                     code()
                 if runagain=="n":
